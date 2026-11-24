@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 40rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  line-height: 1.5;
+}
+section {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+label {
+  display: block;
+  font-weight: bold;
+  margin-top: 0.75rem;
+}
+input,
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  font: inherit;
+}
+button {
+  padding: 0.5rem 1rem;
+  margin-top: 0.75rem;
+  font: inherit;
+}
+ul {
+  margin-top: 1rem;
+}
+:focus-visible {
+  outline: 3px solid #005cbb;
+  outline-offset: 3px;
+}
+
+/* Demo 2 */
+#box {
+  padding: 1rem;
+  border: 2px solid #888;
+}
+#box.active {
+  background: #d9f4e8;
+  border-color: #006e60;
+}
+
+/* Demo 3 */
+.error {
+  color: #9a1229;
+  min-height: 1.5em;
+  margin: 0.2rem 0 0;
+}
+[aria-invalid="true"] {
+  border: 2px solid #a91630;
+}

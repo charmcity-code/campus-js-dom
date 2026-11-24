@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DOM practice</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1>DOM practice</h1>
+
+    <section>
+      <h2>1. A button changes content</h2>
+      <button id="specialButton" type="button">Show today's special</button>
+      <p id="specialMessage" role="status">
+        Choose the button to see our special.
+      </p>
+    </section>
+
+    <section>
+      <h2>2. Typing changes a style</h2>
+      <label for="guestName">Your name</label>
+      <input id="guestName" type="text" />
+      <p id="box">This box changes style when you type.</p>
+    </section>
+
+    <section>
+      <h2>3. Form validation</h2>
+      <p>All fields are required. This demo checks your entries only.</p>
+      <form id="contactForm" novalidate>
+        <label for="name">Name (required)</label>
+        <input id="name" required aria-describedby="nameError" />
+        <p id="nameError" class="error"></p>
+
+        <label for="email">Email (required)</label>
+        <input id="email" type="email" required aria-describedby="emailError" />
+        <p id="emailError" class="error"></p>
+
+        <label for="message">Message (required)</label>
+        <textarea
+          id="message"
+          rows="3"
+          required
+          aria-describedby="messageError"
+        ></textarea>
+        <p id="messageError" class="error"></p>
+
+        <button type="submit">Check message</button>
+        <p id="formStatus" role="status"></p>
+      </form>
+    </section>
+
+    <section>
+      <h2>4. A list that grows</h2>
+      <label for="itemInput">Menu item</label>
+      <input id="itemInput" type="text" />
+      <button id="addItem" type="button">Add item</button>
+      <ul id="menuList"></ul>
+    </section>
+  </body>
+</html>
